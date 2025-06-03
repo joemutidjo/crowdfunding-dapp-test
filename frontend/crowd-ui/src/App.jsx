@@ -107,6 +107,21 @@ function App() {
 
   return (
     <div style={{ padding: 20, fontFamily: "Arial, sans-serif" }}>
+      <a
+        href="https://github.com/joemutidjo/crowdfunding-dapp-test?tab=readme-ov-file#readme"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: "inline-block",
+          marginBottom: "16px",
+          color: "#007bff",
+          textDecoration: "underline",
+          fontSize: "16px"
+        }}
+      >
+        📄 View README on GitHub
+      </a>
+
       <h1 style={{ marginBottom: 5 }}>Crowdfund DApp</h1>
       <h3 style={{ marginTop: 0, marginBottom: 20, color: "#555" }}>
         Raising 5 ETH for Kingston's homeless!
