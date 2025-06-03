@@ -1,6 +1,9 @@
-entrypoint = "index.js"
+entrypoint = "frontend/crowd-ui/index.html"
 modules = ["nodejs-22"]
 hidden = [".config", "package-lock.json"]
+
+[env]
+REPLIT_WORKING_DIR = "frontend/crowd-ui"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", "package.json", "package-lock.json"]
@@ -9,6 +12,10 @@ requiredFiles = [".replit", "replit.nix", "package.json", "package-lock.json"]
 channel = "stable-24_11"
 
 [deployment]
-run = ["node", "index.js"]
+run = ["npm", "run", "dev"]
 deploymentTarget = "autoscale"
 ignorePorts = false
+
+[[ports]]
+localPort = 5173
+externalPort = 80
